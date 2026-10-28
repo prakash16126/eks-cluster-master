@@ -46,6 +46,8 @@ provider "kubernetes" {
       module.eks.cluster_name,
       "--region",
       var.aws_region,
+      "--output",
+      "json",
     ]
   }
 }
